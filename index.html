@@ -4,28 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-   
+    <link rel="stylesheet" type="text/css" href="q4q1sw2.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <title>Shelf Discovery</title>
-
-    <style>
-        #container1{
-            background-image: linear-gradient(#fa6bf0, #9f4ef5);
-        }
-    </style>
 </head>
 
 <body class="container mt-4">
+    <center>
     <div class="text-center text-white p-3 rounded" id="container1"><h1 id="storename"></h1>
     <p id="ownername"></p>
     <p id="yearfounded"></p>
     </div>
-    <div class="card mt-4"></div>
-    <div class="card-header bg-dark text-white">Our Featured Cutea's
-        <table></table>
-    </div>
+    </center>
+    <div class="card mt-4 text-white" style="font-size: 25px" id="container2">Our Cutea's</div>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>
+                name of item 
+            </th>
+            <th>
+                Price of item
+            </th>
+        </tr>
+        <tr>
+            <td id="name1"></td>
+            <td id="price1"></td>
+        </tr>
+        <tr>
+            <td id="name2"></td>
+            <td id="price2"></td>
+        </tr>
+        <tr>
+            <td id="name3"></td>
+            <td id="price3"></td>
+        </tr>
+        <tr>
+            <td id="name4"></td>
+            <td id="price4"></td>
+        </tr>
+    </table>
+    <div class="card mt-4" style="font-size: 25px" id="time"></div>
+    <br><br>
+    <center>
+    <div class="card mt-4" style="font-size: 15px" id="delivery">Delivery Unavailable</div>
+    </center>
+
 <script type="py" src="main.py"></script>
 </body>
 </html>
